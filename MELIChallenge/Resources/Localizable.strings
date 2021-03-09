@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  MELIChallenge
+
+  Created by Santiago Balestero on 3/7/21.
+  
+*/
+
+
+//SERVICES
+
+"baseUrl" = "api.mercadolibre.com";
+"productSearchEndpoint" = "/sites/MLU/search";
+
+//PRODUCT LIST VIEWCONTROLLER
+
+"searchBarPlaceholder" = "Busca en Mercado Libre";
+"connectionErrorText" = "Error de conexion, vuelva a intentarlo";
+"emptyResults" = "No se encontraron resultados";
+
+"errorAlertsTitle" = "Error";

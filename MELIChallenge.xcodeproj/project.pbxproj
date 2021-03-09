@@ -3,18 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		346030CB25F5770C004BD20E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 346030CA25F5770C004BD20E /* Localizable.strings */; };
+		346030EB25F65615004BD20E /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346030EA25F65615004BD20E /* UITableViewExtensions.swift */; };
+		3460311125F6A0F3004BD20E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3460311025F6A0F3004BD20E /* README.md */; };
+		3460311D25F7961D004BD20E /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 3460311C25F7961D004BD20E /* SDWebImage */; };
 		34CCA10D25EC41B1004A1FE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CCA10C25EC41B1004A1FE6 /* AppDelegate.swift */; };
 		34CCA10F25EC41B1004A1FE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CCA10E25EC41B1004A1FE6 /* SceneDelegate.swift */; };
-		34CCA11125EC41B1004A1FE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CCA11025EC41B1004A1FE6 /* ViewController.swift */; };
 		34CCA11425EC41B1004A1FE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34CCA11225EC41B1004A1FE6 /* Main.storyboard */; };
 		34CCA11625EC41B2004A1FE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34CCA11525EC41B2004A1FE6 /* Assets.xcassets */; };
 		34CCA11925EC41B2004A1FE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34CCA11725EC41B2004A1FE6 /* LaunchScreen.storyboard */; };
 		34CCA12425EC41B2004A1FE6 /* MELIChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CCA12325EC41B2004A1FE6 /* MELIChallengeTests.swift */; };
 		34CCA12F25EC41B2004A1FE6 /* MELIChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CCA12E25EC41B2004A1FE6 /* MELIChallengeUITests.swift */; };
+		34D615D525ED9B67004568F1 /* ProductSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D615D425ED9B67004568F1 /* ProductSearchTableViewController.swift */; };
+		34D615DA25ED9BD8004568F1 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D615D925ED9BD8004568F1 /* ProductModel.swift */; };
+		34D6160225EF2B17004568F1 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D6160125EF2B17004568F1 /* ProductService.swift */; };
+		34FCC20725F1AD1900AAE530 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCC20625F1AD1900AAE530 /* ProductTableViewCell.swift */; };
+		34FCC21125F2514C00AAE530 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCC21025F2514C00AAE530 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		346030CA25F5770C004BD20E /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		346030EA25F65615004BD20E /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
+		3460311025F6A0F3004BD20E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		34CCA10925EC41B1004A1FE6 /* MELIChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MELIChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34CCA10C25EC41B1004A1FE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34CCA10E25EC41B1004A1FE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		34CCA11025EC41B1004A1FE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		34CCA11325EC41B1004A1FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34CCA11525EC41B2004A1FE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34CCA11825EC41B2004A1FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +59,11 @@
 		34CCA12A25EC41B2004A1FE6 /* MELIChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MELIChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34CCA12E25EC41B2004A1FE6 /* MELIChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MELIChallengeUITests.swift; sourceTree = "<group>"; };
 		34CCA13025EC41B2004A1FE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34D615D425ED9B67004568F1 /* ProductSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSearchTableViewController.swift; sourceTree = "<group>"; };
+		34D615D925ED9BD8004568F1 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		34D6160125EF2B17004568F1 /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		34FCC20625F1AD1900AAE530 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		34FCC21025F2514C00AAE530 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3460311D25F7961D004BD20E /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +92,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		346030C925F576AE004BD20E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				346030CA25F5770C004BD20E /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		346030F225F65705004BD20E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				34FCC20625F1AD1900AAE530 /* ProductTableViewCell.swift */,
+				34FCC21025F2514C00AAE530 /* DetailViewController.swift */,
+				34D615D425ED9B67004568F1 /* ProductSearchTableViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		34CCA10025EC41B1004A1FE6 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +133,18 @@
 		34CCA10B25EC41B1004A1FE6 /* MELIChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				3460311025F6A0F3004BD20E /* README.md */,
+				346030F225F65705004BD20E /* Views */,
+				34D615DE25ED9C0B004568F1 /* Model */,
+				346030C925F576AE004BD20E /* Resources */,
+				34D615E825EF24C1004568F1 /* Network */,
 				34CCA10C25EC41B1004A1FE6 /* AppDelegate.swift */,
 				34CCA10E25EC41B1004A1FE6 /* SceneDelegate.swift */,
-				34CCA11025EC41B1004A1FE6 /* ViewController.swift */,
 				34CCA11225EC41B1004A1FE6 /* Main.storyboard */,
 				34CCA11525EC41B2004A1FE6 /* Assets.xcassets */,
 				34CCA11725EC41B2004A1FE6 /* LaunchScreen.storyboard */,
 				34CCA11A25EC41B2004A1FE6 /* Info.plist */,
+				346030EA25F65615004BD20E /* UITableViewExtensions.swift */,
 			);
 			path = MELIChallenge;
 			sourceTree = "<group>";
@@ -128,6 +167,22 @@
 			path = MELIChallengeUITests;
 			sourceTree = "<group>";
 		};
+		34D615DE25ED9C0B004568F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				34D615D925ED9BD8004568F1 /* ProductModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		34D615E825EF24C1004568F1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				34D6160125EF2B17004568F1 /* ProductService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +199,9 @@
 			dependencies = (
 			);
 			name = MELIChallenge;
+			packageProductDependencies = (
+				3460311C25F7961D004BD20E /* SDWebImage */,
+			);
 			productName = MELIChallenge;
 			productReference = 34CCA10925EC41B1004A1FE6 /* MELIChallenge.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +273,9 @@
 				Base,
 			);
 			mainGroup = 34CCA10025EC41B1004A1FE6;
+			packageReferences = (
+				3460311B25F7961D004BD20E /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 34CCA10A25EC41B1004A1FE6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +293,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				34CCA11925EC41B2004A1FE6 /* LaunchScreen.storyboard in Resources */,
+				346030CB25F5770C004BD20E /* Localizable.strings in Resources */,
+				3460311125F6A0F3004BD20E /* README.md in Resources */,
 				34CCA11625EC41B2004A1FE6 /* Assets.xcassets in Resources */,
 				34CCA11425EC41B1004A1FE6 /* Main.storyboard in Resources */,
 			);
@@ -258,9 +321,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34CCA11125EC41B1004A1FE6 /* ViewController.swift in Sources */,
+				34FCC21125F2514C00AAE530 /* DetailViewController.swift in Sources */,
 				34CCA10D25EC41B1004A1FE6 /* AppDelegate.swift in Sources */,
+				34FCC20725F1AD1900AAE530 /* ProductTableViewCell.swift in Sources */,
 				34CCA10F25EC41B1004A1FE6 /* SceneDelegate.swift in Sources */,
+				346030EB25F65615004BD20E /* UITableViewExtensions.swift in Sources */,
+				34D615D525ED9B67004568F1 /* ProductSearchTableViewController.swift in Sources */,
+				34D615DA25ED9BD8004568F1 /* ProductModel.swift in Sources */,
+				34D6160225EF2B17004568F1 /* ProductService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +661,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3460311B25F7961D004BD20E /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3460311C25F7961D004BD20E /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3460311B25F7961D004BD20E /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 34CCA10125EC41B1004A1FE6 /* Project object */;
 }
